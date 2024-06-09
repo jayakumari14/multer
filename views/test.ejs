@@ -12,24 +12,20 @@
       <div class="card-header">
         <h2>Input User & Upload Files</h2>
       </div>
-      <div class="card-body">
-        <form
-          action="/upload"
-          method="post"
-          autocomplete="off"
-          enctype="multipart/form-data"
-        >
-          <label for="name">Upload File:</label>
-          <input type="file" name="image" id="name" />
-          <div class="card-footer">
-            <input
-              type="submit"
-              value="Upload File"
-              class="bg-sky-500 px-4 py-2 text-white rounded-md"
-            />
-          </div>
-        </form>
-      </div>
+
+      <form
+        action="/upload"
+        method="post"
+        autocomplete="off"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="image" />
+        <input
+          type="submit"
+          value="Upload File"
+          class="bg-sky-500 px-4 py-2 text-white rounded-md"
+        />
+      </form>
     </div>
   </body>
 </html>
